@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "canisters": {
+      "my_rust_dapp": {
+        "type": "custom",
+        "candid": "src/rust_hello/src/rust_hello.did",
+        "wasm": "target/wasm32-unknown-unknown/debug/rust_hello.wasm", 
+        "build": "cargo build --target wasm32-unknown-unknown --package rust_hello",
+        "main": "src/rust_hello/src/lib.rs"
+      }
+    }
+}
